@@ -1,0 +1,12 @@
+
+.burger{
+display: none;
+}
+@media (max-width: 200px) {
+    .burger  {
+        display: block;
+    }
+    ul{
+        display:none ;
+    }
+}

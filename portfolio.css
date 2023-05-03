@@ -17,6 +17,7 @@ body {
     text-decoration: underline;
   }
   
+  
   header {
     background-color:green;
     color: #fff;
@@ -79,9 +80,37 @@ body {
     margin: 10px 0;
   }
   
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  input[type="submit"] {
+    background-color: blue;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: darkgreen;
+  }
+  
+  
   footer {
     width: 100%;
-    bottom: 0px;
+    bottom: 0;
     background-color: #ccc;
     color: #fff;
     position:fixed;
@@ -92,6 +121,26 @@ body {
     font-weight:bold;
 }
 nav ul li a:hover {
-  color: #00BFE1;
+  color: yellow;
   text-shadow: 0 0 13px white;
+}
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.image-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.image-item:hover img {
+  transform: scale(2);
 }

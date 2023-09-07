@@ -1,128 +1,128 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1, h2, h3 {
-    margin-top: 0;
-  }
-  
-  a {
-    color:white;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  
-  header {
-    background-color:green;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 36px;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  nav li {
-    margin: 0 10px;
-  }
-  
-  nav a {
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
-  }
-  
-  section {
-    margin-bottom: 40px;
-  }
-  
-  section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  li h3 {
-    margin: 0;
-    font-size: 18px;
-  }
-  
-  li p {
-    margin: 10px 0;
-  }
-  
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input[type="text"], input[type="email"], textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-  }
-  
-  input[type="submit"] {
-    background-color: blue;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: darkgreen;
-  }
-  
-  
-  footer {
-    width: 100%;
-    bottom: 0;
-    background-color: #ccc;
-    color: #fff;
-    position:fixed;
-    padding-top:0px;
-    padding-bottom:0px;
-    text-align:center;
-    font-size:15px;
-    font-weight:bold;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+a {
+  color:white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+header {
+  background-color:green;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+li p {
+  margin: 10px 0;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color: blue;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: darkgreen;
+}
+
+
+footer {
+  width: 100%;
+  bottom: 0;
+  background-color: #ccc;
+  color: #fff;
+  position:fixed;
+  padding-top:0px;
+  padding-bottom:0px;
+  text-align:center;
+  font-size:15px;
+  font-weight:bold;
 }
 nav ul li a:hover {
-  color: yellow;
-  text-shadow: 0 0 13px white;
+color: yellow;
+text-shadow: 0 0 13px white;
 }
 .image-grid {
   display: grid;
@@ -142,5 +142,25 @@ nav ul li a:hover {
 }
 
 .image-item:hover img {
-  transform: scale(2);
+  transform: scale(1); /* Change the scale to 1 to keep the image size the same on hover */
+}#collage {
+  margin-top: 40px;
+}
+
+.collage {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+
+.collage img {
+  max-width: 100%;
+  height: auto;
+}
+#collage-line-2 {
+  margin-top: 40px;
+}
+
+#collage-line-2 .collage {
+  grid-template-columns: repeat(5, 1fr);
 }
